@@ -1,0 +1,11 @@
+.header{
+   height: 80px;
+   background-color: rgb(254,234,233);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-right: 140px;
+}
+.header h1{
+   color: rgb(251,176,64);
+}
