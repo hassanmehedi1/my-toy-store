@@ -18,10 +18,10 @@ const Cart = ({cart, handleChooseAgain}) => {
    
    return (
       <div className='cart'>
-         <h2>Selected Toy's</h2>
+         <h3>Selected Toy's</h3>
          {
             cart.map(item =>(
-               <h4 key={item.id}>{item.name}</h4>
+               <h5 key={item.id}>{item.name}</h5>
             ))
             
          }
