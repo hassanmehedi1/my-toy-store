@@ -1,20 +1,20 @@
-import React from 'react';
-import { useState } from 'react';
+import swal from 'sweetalert';
 import './Cart.css'
 
-const Cart = ({cart}) => {
+const Cart = ({cart, handleChooseAgain}) => {
    let newCart = cart;
    let randomCart = Math.floor(Math.random() * newCart.length);
 
-   const [item, setItem] = useState([])
-
-
 
    const handlePickForMe = () => {
-         let rand = (newCart[randomCart].name);
-         setItem(rand);
+
+         swal(
+            `${newCart[randomCart].name}`
+         )
+         
       
    }
+   
    
    return (
       <div className='cart'>
@@ -23,11 +23,12 @@ const Cart = ({cart}) => {
             cart.map(item =>(
                <h4 key={item.id}>{item.name}</h4>
             ))
+            
          }
          <button onClick={handlePickForMe} className='cart-btn1'>Pick For Me</button>
          <br />
-         <h4>Your Chosen Item: {item}</h4>
-         <button className='cart-btn2'>Choose Again</button>
+         <button onClick={handleChooseAgain}className='cart-btn2'>Choose Again</button>
+         
       </div>
    );
 };
