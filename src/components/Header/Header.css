@@ -1,21 +1,20 @@
-.header{
-   height: 80px;
-   background-color: rgb(254,234,233);
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.header {
+  height: 80px;
+  /* background-color: rgb(254, 234, 233); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header h1{
-   color: rgb(251,176,64);
+.header h1 {
+  color: rgb(251, 176, 64);
 }
 
-@media  screen and (max-width: 688px) {
-   .header{
-   height: 60px;
-   width: 100%;
-   background-color: rgb(254,234,233);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   }
+@media screen and (max-width: 688px) {
+  .header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
